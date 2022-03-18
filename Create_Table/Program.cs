@@ -22,7 +22,7 @@ namespace Create_Table
                 con = new SqlConnection("data source=MSI;database=ProdiTI;Integrated Security = TRUE");
                 con.Open();
 
-                SqlCommand cm = new SqlCommand("Create Table Mahasiswa_Coba (NIM Char(12) not null primary key, Nama Varchar(50), Alamat Varchar(50), Alamat Varchar(225), Jenis_Kelamin Varchar(1))", con);
+                SqlCommand cm = new SqlCommand("Create Table Mahasiswa_Coba (NIM Char(12) not null primary key, Nama Varchar(50), Alamat Varchar(225), Jenis_Kelamin Varchar(1))", con);
                 cm.ExecuteNonQuery();
 
                 Console.WriteLine("Tabel Sukses Dibuat!");
