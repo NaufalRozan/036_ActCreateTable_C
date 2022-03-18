@@ -11,10 +11,10 @@ namespace Create_Table
     {
         static void Main(string[] args)
         {
-            new Program().Create();
+            new Program().CreateTable();
         }
 
-        public void Create()
+        public void CreateTable()
         {
             SqlConnection con = null;
             try
